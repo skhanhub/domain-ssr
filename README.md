@@ -1,12 +1,12 @@
 # domain-ssr
 
-This project demonstrates how to use Twitter API. Users can search for Twitter using the web form.
+This project demonstrates how to server-side render a react application using nodejs and express.
 
 
 The application uses the following technologies:
 - Backend: NodeJs with an ExpressJs server
-- Frontend: ReactJs with server side rendering 
-- Database: MongoDb
+- Frontend: ReactJs with server-side rendering 
+- Database: MongoDB
 
 <img src="images/domain-ssr.PNG">
 
