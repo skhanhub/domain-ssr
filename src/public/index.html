@@ -11,25 +11,12 @@
   </head>
 
   <body>
-    <div class="HcardApp" />
+    <div class="HcardApp"></div>
     <script src="https://unpkg.com/react@15/dist/react.js"></script>
     <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
     <script src="main.js"></script>
     <script>
       (function() {
-        var hCardProps = {
-          givenName: 'Sam',
-          surname: 'Fairfax',
-          email: 'sam.fairfax@fairfaxmedia.com.au',
-          phone: '0292822833',
-          houseNumber: '100',
-          street: 'Harris Street',
-          suburb: 'Pyrmont',
-          state: 'NSW',
-          postcode: '2009',
-          country: 'Australia'
-        };
-
         ReactDOM.render(
           React.createElement(
             window.hCard.default,
