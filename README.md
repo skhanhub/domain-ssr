@@ -17,7 +17,7 @@ This project requirs MongoDB.
 Set the following environment variables:
 
 ```
--  SESSION_SECRET: Session secrect (mandatory)
+-  SESSION_SECRET: Session secrect (<b>mandatory</b>)
 -  APP_PORT: Express API port (default to 3001)
 -  MONGODB_URI: MongoDb connection string (default to mongodb://localhost:27017/domain)
 ```
