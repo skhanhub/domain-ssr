@@ -36,14 +36,15 @@ module.exports = async (reqId, path) => {
     hCardProps = { ...hCardProps, ...dbModel.toObject() };
   }
 
-  const data = await readFile(path, 'utf8');
+  let data = await readFile(path, 'utf8');
 
-  data.replace(
+  data = data.replace(
     '<div class="HcardApp"></div>',
     `<div class="HcardApp">
       ${ReactDOMServer.renderToString(React.createElement(app, hCardProps))}
     </div>`
   ); // end replace
+  data = data.replace('hCardProps', `${JSON.stringify(hCardProps)}`);
 
-  return data.replace('hCardProps', `${JSON.stringify(hCardProps)}`);
+  return data;
 }; // end function
