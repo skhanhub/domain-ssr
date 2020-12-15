@@ -9,7 +9,7 @@
     "test": "jest",
     "coverage": "jest --coverage",
     "dev": "nodemon",
-    "start": "node ./src/server.ts"
+    "start": "node ./src/server.js"
   },
   "repository": {
     "type": "git",
